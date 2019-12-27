@@ -1,4 +1,5 @@
-﻿using Calculator.Services;
+﻿using Calculator.Interfaces;
+using Calculator.Services;
 using System;
 
 namespace Calculator
@@ -7,7 +8,7 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Menu menu = new Menu();
+            IMenu menu = new Menu();
             menu.Start();
         }
     }
